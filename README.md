@@ -21,12 +21,18 @@ An API for creating and accessing cpf scoring
 
 ## Running the application
 
-After cloning the repository and cd into it, run on your terminal:
+After cloning the repository and cd into it, the first thing we need to do is to run a docker-compose up to get the Postgres database running, you can do that using the following commands:
 
 ```bash
 cd /src
 docker-compose up -d
+```
+
+After it, it will be necessary to restore the packages of the application then run the app
+```bash
 cd /Score
 dotnet restore
 dotnet run
 ```
+  
+Right now you can run your requests on Postman or similar softwares.
