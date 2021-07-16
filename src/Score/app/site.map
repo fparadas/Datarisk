@@ -1,0 +1,4 @@
+/migrate, GET, 
+/api/, GET, 
+/api/%s, GET, 
+/api/, POST, 

@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Score": "User ID=docker;Password=postgres;Host=localhost;Port=5432;Database=datarisk"
+  }
+}

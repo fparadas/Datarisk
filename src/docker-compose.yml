@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  # app:
+  #   build: ./Score
+  #   ports:
+  #     - 8085:8085
+  #   links:
+  #     - "database:db"
+  database:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment: 
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=datarisk
+    volumes: 
+      - pgdata:/data/postgres
+
+volumes:
+  pgdata:
+    driver: local
