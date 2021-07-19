@@ -4,9 +4,9 @@ An API for creating and accessing cpf scoring
 
 ## Endpoints
 
-- GET localhost:5000/migrate -> run all the migrations on the Postgres connection
-- POST localhost:5000/api {"cpf": "000-000-000/00"} -> Insert a user on the database, with the generated score for the CPF 
-- GET localhost:5000/api/<cpf> -> Returns a Json containing the info on the DB of that CPF, example: 
+- GET localhost:8085/migrate -> run all the migrations on the Postgres connection
+- POST localhost:8085/api {"cpf": "000-000-000/00"} -> Insert a user on the database, with the generated score for the CPF 
+- GET localhost:8085/api/<cpf> -> Returns a Json containing the info on the DB of that CPF, example: 
 ```json
   [
   {
