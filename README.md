@@ -17,7 +17,7 @@ An API for creating and accessing cpf scoring
   }
 ]
 ```
-- GET localhost:5000/api -> Returns a list with all the records on the database
+- GET localhost:8085/api -> Returns a list with all the records on the database
 
 ## Running the application
 
